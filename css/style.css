@@ -7,23 +7,30 @@
 }
 
 .main-logo {
-    height: 50px;
-    width: 50px;
-    background-image: url(https://picsum.photos/200);
-    background-position: center;
-    background-size: cover;
-    border-radius: 30%;
+    display: flex;
+    width: 100px;
+    height: 100px;
 }
 
-nav {
-    display: flex;
+.head-content {
+    background-color: rgb(117, 104, 104);
+    justify-content: center;
+    align-items: center;
 }
 
 nav>a {
-    padding: 8px;
-    border: 1px solid;
+    background-color: rgb(117, 104, 104);
+    padding: 20px;
+    border: 3px solid;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
+}
+
+nav>a:hover {
+    background-color: rgb(255, 255, 255);
+    transition: .2s ease-in-out;
+    transition-delay: .2s ;
+    border-radius: 50px;
 }
 
 .banner-img {
