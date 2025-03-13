@@ -26,14 +26,13 @@
 
     <!-- NAVIGATION -->
         <nav>
-            <a href="#Home">Home</a>
-            <a href="#our-profile">Our Profile</a>
-            <a href="#achievement">Achievement</a> 
-            <a href="#Registration">Registration</a>
+            <a href="#home">Home</a>
+            <a href="#profile-achievement">Profile and Achievement</a>  
+            <a href="#registration-content">Registration</a>
         </nav>
         </header>
 
-    <hr>
+    
 
     <!-- MAIN CONTENT -->
         
@@ -49,74 +48,63 @@
     <!-- BANNER AUTO SLIDE -->
             <div class="banner-img">
                 <a href="https://www.youtube.com/watch?v=4rl-dmqIWE8" class="a-content">
-                    <img src="home-img.jpg" class="head-img">
+                    <img src="home-img.jpg" class="banner-img">
                 </a>
             </div>
         </section>
 
-    <hr />
-
     <!-- OUR PROFILE -->
-        <section id="our-profile">
+        <section id="profile-achievement">
             <header>
-                <h1>Our Profile</h1>
+                <div class="profile-head">
+                <h1>Profile and Achievement</h1>
+                </div>
             </header>
 
     <!-- OUR PROFILE CONTENT -->
-            <div class="our-profile-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
-            </div>
-        </section>
-
-    <!-- ACHIEVEMENT -->
-        <section id="achievement">
-            <header>
-                <h1>Achievement</h1>
-            </header>
-
-    <!-- ACHIEVEMENT CONTENT -->
-            <div class="achievement-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+            <div class="profile-achievement">
+                <p>Join us in Dagestan, the land of fighters like Khabib Nurmagomedov, 
+                and embark on a journey to become the best fighter you can be. 
+                Our premier mixed martial arts training camp offers you the opportunity to train where champions are raised and honed. 
+                Come and experience the incredible transformation your skills are capable of. 
+                Sign up now and start your journey to becoming a champion!</p>
+                <img src="khabib.jpg" class="profile-img">
             </div>
         </section>
 
     <!-- REGISTRATION -->
-        <section id="Registration">
+        <section id="registration-content">
             <header>
-                <h1>Registration</h1>
+                <div class="registration">
+                    <h1>Registration</h1>
+                </div>
     <!-- REGISTRATION CONTENT -->
-                <form>
-                    <label for="fname">NAME :</label>
-                        <input type="text" id="fname" name="fname" value="">
-                            <br><br>
-
-                    <label for="phone">PHONE :</label>
-                        <input type="phone" id="phone" phone="phone" value="">
-                            <br><br>
-
-                    <label for="birthday">Birthday :</label>
-                        <input type="date" id="birthday" name="birthday">
-                            <br><br>
-
-                    <input type="radio" id="male" name="fav_language" value="MALE">
-                        <label for="male">MALE</label>
-                            <br>
-
-                    <input type="radio" id="female" name="fav_language" value="FEMALE">
-                        <label for="female">FEMALE</label>
-
-                    <p>INBOX :</p>
-                        <textarea name="message" rows="15" cols="45"></textarea>
-                            <br>
-
-                    <input type="submit" value="Submit">
+                <div class="registration-content">
+                <form action="proses.php" method="post">
+                    <br>
+                        <label for="name-input">NAME :</label>
+                            <input type="text" id="name-input" name="name" placeholder="Your Name" required>
+                                <br><br>
+                        <label for="phone-input">PHONE :</label>
+                            <input type="phone" id="phone-input" name="phone" placeholder="Your phone" required>
+                                <br><br>
+                        <label for="birthday">Birthday :</label>
+                            <input type="date" id="date-input" name="birthday" placeholder="Youy birthday" required>
+                                <br><br>
+                        <label for="inbox">INBOX :</label> 
+                            <input type="inbox" id="inbox-input" name="inbox" placeholder="Your inbox" required>
+                                <br><br>
+                        <button type="button" onclick="validateform()">Submit</button>
                 </form>
+                </div>
             </header>
         <br>
 
     <!-- REGISTRATION END -->
-            <div class="Registration-end">
+            <div class="registration-end">
                 <p>Thanks for Registering, our Admin will be contact you soon.</p>
+                <p>Website ini dibuat untuk keperluan mini project RevoU</p>
+                </p>
             </div>
         </section>
         
@@ -124,8 +112,11 @@
 
     <!-- FOOTER -->
         <footer>
-            <p>&copy; 2025 Portfolio Fikiarestu</p>
+            <div class="footer">
+                <p>&copy; 2025 Portfolio Fikiarestu</p>
+            </div>
         </footer>
+        <script src="js\script.js"></script>
     </body>
 
 </html>
